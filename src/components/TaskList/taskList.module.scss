@@ -1,0 +1,46 @@
+.title {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.tasks {
+  .task {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    margin-bottom: 1rem;
+    input {
+      flex: 0 0 10%;
+      max-width: 10%;
+      height: 2rem;
+      margin-top: 0.5rem;
+    }
+    .taskName {
+      flex: 0 0 70%;
+      max-width: 70%;
+      columns: #383f50;
+      padding: 0 0 0 0.5rem;
+      &.taskNameDone {
+        color: #b2b7bb;
+        text-decoration: line-through;
+      }
+    }
+    .TaskAction {
+      flex: 0 0 20%;
+      max-width: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .TaskBtn {
+        border-radius: 0.5rem;
+        flex: 0 0 3.5rem;
+        font-size: 1.8rem;
+        max-width: 3.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
